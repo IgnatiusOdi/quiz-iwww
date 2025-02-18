@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    height: 100%;
+    font-family: sans-serif;
+    background-color: lightcoral;
+}
+
+.cb{
+    clear: both;
+}
+
+.header{
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+    font-family: fantasy;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 50px;
+}
+
+.content{
+    min-height: calc(100% - 30px);
+    margin: auto;
+    margin-top: 5px;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.judul{
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #660000;
+    border: 1px solid #660000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tabel{
+    border: 1px solid #660000;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+table,th,td{
+    border: 1px solid #dddddd;
+}
+
+th{
+    background-color: rgba(221,221,221,0.2);
+    padding: 3px 18px 3px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+tr.warna{
+    background-color: #FDF7E5;
+}
+
+td{
+    font-size: 12px;
+    padding: 8px;
+}
+
+td a{
+    color: #D79300;
+}
+
+.footer{
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+    background-color: black;
+    height: 30px;
+}
+
+ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 0;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+ul li:last-child{
+    border-right: none;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background:#fff;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000000;
+}
+
+ul li a .icon .fa:last-child{
+    color: lightcoral;
+}
+
+ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+}
+
+ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+ul li a .name span{
+    display: block;
+    position: relative;
+    color: #000000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+
+ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: lightcoral;
+}
+
+ul li a:hover .name span:before{
+    transform: translateY(20px);
+}
